@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Knowledge Bowl Information</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<h1>Knowledge Bowl Home Page</h1>
+
+
+<div class="menuBar">
+<button type="button" class="linkButton"
+onclick="page1(1)"> <b>Home Page</button>
+
+<button type="button" class="linkButton"
+onclick="page2(1)"> <b>Info Page</button>
+
+<button type="button" class="linkButton"
+onclick="page3(1)"> <b>Teams/Locations</button>
+
+<button type="button" class="linkButton"
+onclick="page4(1)"> <b>Practice Trivia Questions</button>
+</div>
+
+
+<p> </p>
+<div id="blueDiv">
+<img onmouseover="blueImg(this)" onmouseout="normalImg(this)" src="Images/Uncle Brain.png" alt="Uncle Brian" id="UncleBrain" class="center">
+</div>
+
+<h1>Scoring Software</h1>
+
+<p> Use this software to score the points for each team during a match.
+
+<p> | A Team| B Team| C Team| The Auk (i.e. no correct answer)
+<form id="quiz">
+	&nbsp1. <li class="horizList"><input type="radio" id="ATeam" name="scoring1" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring1" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring1" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring1" value="Auk" checked></li> <br>
+
+	&nbsp2. <li class="horizList"><input type="radio" id="ATeam" name="scoring2" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring2" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring2" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring2" value="Auk" checked></li><br>
+
+
+	&nbsp3. <li class="horizList"><input type="radio" id="ATeam" name="scoring3" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring3" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring3" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring3" value="Auk" checked></li><br>
+
+
+	&nbsp4. <li class="horizList"><input type="radio" id="ATeam" name="scoring4" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring4" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring4" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring4" value="Auk" checked></li><br>
+
+
+	&nbsp5. <li class="horizList"><input type="radio" id="ATeam" name="scoring5" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring5" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring5" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring5" value="Auk" checked></li><br>
+
+
+	&nbsp6. <li class="horizList"><input type="radio" id="ATeam" name="scoring6" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring6" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring6" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring6" value="Auk" checked></li><br>
+
+	&nbsp7. <li class="horizList"><input type="radio" id="ATeam" name="scoring7" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring7" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring7" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring7" value="Auk" checked></li><br>
+
+	&nbsp8. <li class="horizList"><input type="radio" id="ATeam" name="scoring8" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring8" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring8" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring8" value="Auk" checked></li><br>
+
+	&nbsp9. <li class="horizList"><input type="radio" id="ATeam" name="scoring9" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring9" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring9" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring9" value="Auk" checked></li><br>
+
+	10.<li class="horizList"><input type="radio" id="ATeam" name="scoring10" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring10" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring10" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring10" value="Auk" checked></li><br>
+
+	11.<li class="horizList"><input type="radio" id="ATeam" name="scoring11" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring11" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring11" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring11" value="Auk" checked></li><br>
+
+	12.<li class="horizList"><input type="radio" id="ATeam" name="scoring12" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring12" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring12" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring12" value="Auk" checked></li><br>
+
+	13.<li class="horizList"><input type="radio" id="ATeam" name="scoring13" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring13" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring13" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring13" value="Auk" checked></li><br>
+
+	14.<li class="horizList"><input type="radio" id="ATeam" name="scoring14" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring14" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring14" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring14" value="Auk" checked></li><br>
+
+	15.<li class="horizList"><input type="radio" id="ATeam" name="scoring15" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring15" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring15" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring15" value="Auk" checked></li><br>
+
+	16.<li class="horizList"><input type="radio" id="ATeam" name="scoring16" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring16" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring16" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring16" value="Auk" checked></li><br>
+
+	17.<li class="horizList"><input type="radio" id="ATeam" name="scoring17" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring17" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring17" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring17" value="Auk" checked></li><br>
+
+	18.<li class="horizList"><input type="radio" id="ATeam" name="scoring18" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring18" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring18" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring18" value="Auk" checked></li><br>
+
+	19.<li class="horizList"><input type="radio" id="ATeam" name="scoring19" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring19" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring19" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring19" value="Auk" checked></li><br>
+
+	20.<li class="horizList"><input type="radio" id="ATeam" name="scoring20" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring20" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring20" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring20" value="Auk" checked></li><br>
+
+	21.<li class="horizList"><input type="radio" id="ATeam" name="scoring21" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring21" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring21" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring21" value="Auk" checked></li><br>
+
+	22.<li class="horizList"><input type="radio" id="ATeam" name="scoring22" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring22" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring22" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring22" value="Auk" checked></li><br>
+
+	23.<li class="horizList"><input type="radio" id="ATeam" name="scoring23" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring23" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring23" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring23" value="Auk" checked></li><br>
+
+	24.<li class="horizList"><input type="radio" id="ATeam" name="scoring24" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring24" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring24" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring24" value="Auk" checked></li><br>
+
+	25.<li class="horizList"><input type="radio" id="ATeam" name="scoring25" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring25" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring25" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring25" value="Auk" checked></li><br>
+
+	26.<li class="horizList"><input type="radio" id="ATeam" name="scoring26" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring26" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring26" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring26" value="Auk" checked></li><br>
+
+	27.<li class="horizList"><input type="radio" id="ATeam" name="scoring27" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring27" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring27" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring27" value="Auk" checked></li><br>
+
+	28.<li class="horizList"><input type="radio" id="ATeam" name="scoring28" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring28" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring28" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring28" value="Auk" checked></li><br>
+
+	29.<li class="horizList"><input type="radio" id="ATeam" name="scoring29" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring29" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring29" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring29" value="Auk" checked></li><br>
+
+	30.<li class="horizList"><input type="radio" id="ATeam" name="scoring30" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring30" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring30" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring30" value="Auk" checked></li><br>
+
+	31.<li class="horizList"><input type="radio" id="ATeam" name="scoring31" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring31" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring31" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring31" value="Auk" checked></li><br>
+
+	32.<li class="horizList"><input type="radio" id="ATeam" name="scoring32" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring32" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring32" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring32" value="Auk" checked></li><br>
+
+	33.<li class="horizList"><input type="radio" id="ATeam" name="scoring33" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring33" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring33" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring33" value="Auk" checked></li><br>
+
+	34.<li class="horizList"><input type="radio" id="ATeam" name="scoring34" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring34" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring34" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring34" value="Auk" checked></li><br>
+
+	35.<li class="horizList"><input type="radio" id="ATeam" name="scoring35" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring35" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring35" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring35" value="Auk" checked></li><br>
+
+	36.<li class="horizList"><input type="radio" id="ATeam" name="scoring36" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring36" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring36" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring36" value="Auk" checked></li><br>
+
+	37.<li class="horizList"><input type="radio" id="ATeam" name="scoring37" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring37" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring37" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring37" value="Auk" checked></li><br>
+
+	38.<li class="horizList"><input type="radio" id="ATeam" name="scoring38" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring38" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring38" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring38" value="Auk" checked></li><br>
+
+	39.<li class="horizList"><input type="radio" id="ATeam" name="scoring39" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring39" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring39" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring39" value="Auk" checked></li><br>
+
+	40.<li class="horizList"><input type="radio" id="ATeam" name="scoring40" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring40" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring40" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring40" value="Auk" checked></li><br>
+
+	41.<li class="horizList"><input type="radio" id="ATeam" name="scoring41" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring41" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring41" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring41" value="Auk" checked></li><br>
+
+	42.<li class="horizList"><input type="radio" id="ATeam" name="scoring42" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring42" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring42" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring42" value="Auk" checked></li><br>
+
+	43.<li class="horizList"><input type="radio" id="ATeam" name="scoring43" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring43" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring43" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring43" value="Auk" checked></li><br>
+
+	44.<li class="horizList"><input type="radio" id="ATeam" name="scoring44" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring44" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring44" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring44" value="Auk" checked></li><br>
+
+	45.<li class="horizList"><input type="radio" id="ATeam" name="scoring45" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring45" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring45" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring45" value="Auk" checked></li><br>
+
+	46.<li class="horizList"><input type="radio" id="ATeam" name="scoring46" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring46" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring46" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring46" value="Auk" checked></li><br>
+
+	47.<li class="horizList"><input type="radio" id="ATeam" name="scoring47" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring47" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring47" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring47" value="Auk" checked></li><br>
+
+	48.<li class="horizList"><input type="radio" id="ATeam" name="scoring48" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring48" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring48" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring48" value="Auk" checked></li><br>
+
+	49.<li class="horizList"><input type="radio" id="ATeam" name="scoring49" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring49" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring49" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring49" value="Auk" checked></li><br>
+
+	50.<li class="horizList"><input type="radio" id="ATeam" name="scoring50" value="ATeam" checked></li>
+	<li class="horizList"><input type="radio" id="BTeam" name="scoring50" value="BTeam" checked></li>
+	<li class="horizList"><input type="radio" id="CTeam" name="scoring50" value="CTeam" checked></li>
+	<li class="horizList"><input type="radio" id="Auk" name="scoring50" value="Auk" checked></li><br>
+</form>
+<span>Scores: </span><span id="quizDiv"></span>
+<input type="hidden" name="total" id="total" />
+
+<h1>Download the App with Practice Knowledge Bowl Questions</h1>
+
+<div class="downloadLinks">
+<p> </p>
+<button type="button"
+onclick="location.href='http://www.greatauk.com/KM_Scholar.exe'"> Click me to download the Windows app for Knowledge Master. </button>
+<p> </p>
+
+<button type="button"
+onclick="location.href='http://www.greatauk.com/scholarMac.zip'"> Click me to download the Mac app for Knowledge Master. </button>
+<p> </p>
+
+<input type="button" value="Click me to view the instructions to install the Mac version of the app."
+onclick="window.open('http://www.greatauk.com/scholarMac.php')">
+<p> </p>
+
+</div>
+
+<p>Creator of the Knowledge Master App: Academic Hallmarks (the supplier of Knowledge Bowl Questions)</p>
+
+
+
+<p> </p>
+
+
+
+
+
+
+<p id="display"></p>
+
+
+<p id="demo"></p>
+
+<script src='script.js' type="text/javascript"></script>
+
+</body>
+</html>
