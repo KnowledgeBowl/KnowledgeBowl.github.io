@@ -1,13 +1,17 @@
 body {
-    background-color: #e3ffe2;
+    background-color: #458acc;
+}
+
+a {
+    color: #071266;
 }
 
 a:visited {
-    color: red;
+    color: #7f1c1c;
 }
 
 h1 {
-    color: #041172;
+    color: #aadba4;
     text-align: center;
 }
 
